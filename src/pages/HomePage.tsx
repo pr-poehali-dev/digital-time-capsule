@@ -8,7 +8,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section className="min-h-[90vh] flex flex-col items-center justify-center px-6 text-center">
         <div className="animate-fade-in-up">
           <p className="font-body text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8 delay-100 animate-fade-in-up">
-            Платформа капсул времени для выпускников
+            Капсулы времени для выпускников
           </p>
           <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-light leading-none tracking-tight mb-8 delay-200 animate-fade-in-up">
             Письма
@@ -18,8 +18,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             себе
           </h1>
           <p className="font-body text-base md:text-lg text-muted-foreground font-light max-w-md mx-auto mb-12 delay-300 animate-fade-in-up">
-            Напишите письмо, которое откроется через год, пять или десять лет.
-            Поделитесь мечтами, обещаниями и воспоминаниями с собой будущим.
+            Пишешь сейчас — читаешь через несколько лет. Можно себе, другу или всему классу.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center delay-400 animate-fade-in-up">
             <button
@@ -48,18 +47,18 @@ export default function HomePage({ onNavigate }: HomePageProps) {
             {[
               {
                 number: "01",
-                title: "Напишите письмо",
-                text: "Поделитесь мыслями, мечтами и планами. Выберите дату открытия — и капсула запечатается.",
+                title: "Пишете письмо",
+                text: "Выбираете дату — когда капсула откроется. Хоть через полгода, хоть через восемь лет.",
               },
               {
                 number: "02",
-                title: "Время идёт",
-                text: "За неделю до открытия мы напомним вам. Вы не пропустите этот момент.",
+                title: "За неделю — напоминание",
+                text: "Придёт письмо на почту. Чтобы не пропустить и, если нужно, предупредить получателя.",
               },
               {
                 number: "03",
-                title: "Письмо доходит",
-                text: "В назначенный день капсула открывается. Вы читаете слова, написанные собой из прошлого.",
+                title: "Капсула открывается",
+                text: "Вы или адресат читает то, что было написано. Без возможности изменить ни слова.",
               },
             ].map((step, i) => (
               <div key={i} className="flex flex-col gap-4">
@@ -79,7 +78,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-24 px-6 bg-foreground text-background">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-display text-4xl md:text-6xl font-light italic mb-6">
-            «Прошлое — это то, что мы несём с собой»
+            «Дорогой я через десять лет...»
           </h2>
           <button
             onClick={() => onNavigate("create")}

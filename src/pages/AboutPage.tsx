@@ -23,8 +23,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <span className="font-display text-6xl font-light text-muted-foreground/20 block mb-4">01</span>
               <h2 className="font-display text-3xl font-light mb-4">Зарегистрируйтесь</h2>
               <p className="font-body text-sm text-muted-foreground font-light leading-relaxed">
-                Создайте аккаунт с вашим email. Никаких лишних данных.
-                Только то, что нужно для доставки письма в нужный день.
+                Нужен только email. Имя — по желанию. Мы не просим ничего лишнего.
               </p>
             </div>
             <div className="h-48 border border-border flex items-center justify-center">
@@ -48,8 +47,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <span className="font-display text-6xl font-light text-muted-foreground/20 block mb-4">02</span>
               <h2 className="font-display text-3xl font-light mb-4">Напишите письмо</h2>
               <p className="font-body text-sm text-muted-foreground font-light leading-relaxed">
-                Пишите себе, другу или целому классу. Никаких ограничений по длине.
-                Выберите дату — от нескольких месяцев до десяти лет.
+                Себе, другу, всему классу. Длина — любая. Дата открытия — от трёх месяцев до десяти лет вперёд.
               </p>
             </div>
           </div>
@@ -61,9 +59,7 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <span className="font-display text-6xl font-light text-muted-foreground/20 block mb-4">03</span>
               <h2 className="font-display text-3xl font-light mb-4">Напоминание за 7 дней</h2>
               <p className="font-body text-sm text-muted-foreground font-light leading-relaxed">
-                За неделю до открытия вы получите уведомление на email.
-                Вы можете подготовиться, предупредить адресата или просто
-                с нетерпением ждать.
+                За семь дней до открытия придёт письмо на почту. Можно предупредить адресата — или промолчать, пусть будет сюрприз.
               </p>
             </div>
             <div className="h-48 border border-border flex items-center justify-center">
@@ -87,20 +83,17 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
               <span className="font-display text-6xl font-light text-muted-foreground/20 block mb-4">04</span>
               <h2 className="font-display text-3xl font-light mb-4">Капсула открывается</h2>
               <p className="font-body text-sm text-muted-foreground font-light leading-relaxed">
-                В назначенный день письмо автоматически открывается.
-                Для публичных капсул — появляется в галерее.
-                Для адресованных — уходит получателю.
+                В нужный день письмо уходит получателю. Если капсула публичная — появляется в галерее анонимно. Редактировать уже нельзя.
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-24 p-10 bg-foreground text-background animate-fade-in-up delay-300">
-          <h2 className="font-display text-3xl font-light mb-4">Почему это важно</h2>
+          <h2 className="font-display text-3xl font-light mb-4">Зачем это вообще нужно</h2>
           <p className="font-body text-sm font-light leading-relaxed text-background/80 mb-8 max-w-xl">
-            Выпускной — один из немногих моментов, когда мы останавливаемся и думаем о будущем.
-            Капсула времени превращает этот момент в живой диалог между вами сегодняшним
-            и вами через годы.
+            Выпускной — странное время. Всё заканчивается и начинается одновременно.
+            Капсула — это способ зафиксировать, каким ты был в этот момент. Не для ленты, не для лайков. Просто для себя.
           </p>
           <button
             onClick={() => onNavigate("create")}
@@ -112,9 +105,9 @@ export default function AboutPage({ onNavigate }: AboutPageProps) {
 
         <div className="mt-16 grid grid-cols-3 gap-8 animate-fade-in-up delay-400">
           {[
-            { value: "2 400+", label: "Капсул создано" },
-            { value: "18", label: "Городов России" },
-            { value: "100%", label: "Анонимность галереи" },
+            { value: "3 мин", label: "Среднее время создания" },
+            { value: "до 10 лет", label: "Максимальный срок" },
+            { value: "анонимно", label: "Публикация в галерее" },
           ].map((stat) => (
             <div key={stat.label} className="text-center border border-border p-6">
               <p className="font-display text-3xl font-light mb-1">{stat.value}</p>
