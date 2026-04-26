@@ -93,38 +93,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      <section className="py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="font-display text-3xl md:text-4xl font-light mb-16 text-center">
-            Что говорят выпускники
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                text: "Я написала себе в 2020-м, что буду счастлива. Открыв письмо, поняла — всё сбылось.",
-                author: "Мария К., выпуск 2020",
-              },
-              {
-                text: "Напоминание пришло ровно за неделю. Это было лучшее утро в году — получить письмо от себя.",
-                author: "Алексей Т., выпуск 2021",
-              },
-              {
-                text: "Писала со слезами. Читала тоже со слезами. Но это совсем другие слёзы.",
-                author: "Даша М., выпуск 2022",
-              },
-            ].map((review, i) => (
-              <div key={i} className="border border-border p-8 flex flex-col gap-6">
-                <p className="font-display text-lg font-light italic leading-relaxed">
-                  «{review.text}»
-                </p>
-                <span className="font-body text-xs text-muted-foreground tracking-wide">
-                  — {review.author}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }
