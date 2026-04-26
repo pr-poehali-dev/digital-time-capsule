@@ -81,9 +81,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
           <h2 className="font-display text-4xl md:text-6xl font-light italic mb-6">
             «Прошлое — это то, что мы несём с собой»
           </h2>
-          <p className="font-body text-sm text-background/60 font-light mb-12">
-            Более 2 400 выпускников уже создали свои капсулы
-          </p>
           <button
             onClick={() => onNavigate("create")}
             className="px-8 py-3.5 bg-background text-foreground font-body text-sm font-light tracking-wide hover:bg-background/90 transition-colors"
